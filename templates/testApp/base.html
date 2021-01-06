@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="itr">
+<head>
+   <meta charset="utf=8">
+   <title></title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   span{
+      color:red;
+   }
+   body{
+      .blue {color: #00f;}
+ .green {color: #008000;}
+   }
+   p{
+      text-align:right;
+   }
+   .navbar navbar-expand-lg navbar-light bg-light{
+      background:red; 
+   }
+   h1{
+      text-align:centre;
+   }
+   .fa-yotube-play {
+      color:red;
+   }
+   .container.jumbotron{
+      width:100px;
+   }
+   </style>
+</head>
+<body>
+
+<div class ="jumbotron">
+ <h1 style="text-align:center">AgriTech Telugu</h1><br>
+ <p>
+    <a href="https://www.facebook.com/AgriTechTelugu/"  class="fa fa-facebook-f" style="font-size:40px;color:blue"></a>
+    <a href="https://wa.me/+919030006656?text=Hello%20AgriTech%20Telugu" class="fa fa-whatsapp" style="font-size:40px;color:green"></a>
+    <a href="https://www.instagram.com/agritechtelugu" class="fa fa-instagram" style="font-size:48px;color:red"></a>
+    <a href="https://twitter.com/AgriTechTelugu" class="fa fa-twitter" style="font-size:48px;color:blue"></a>
+    <a href=" https://www.youtube.com/AgriTechTelugu"class="fa fa-youtube-play" style="font-size:38px;color:red"></a>
+  </p>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+<div class="navbar-header">
+<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+</div>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="nav navbar-nav">
+<div class="navbar-nav">
+<a class="nav-item nav-link" href="/home"><span>Home</span></a>
+<a class="nav-item nav-link" href="/about"><span>About</span></a>
+<a class="nav-item nav-link" href="/experts"><span>Expects Advice</span></a>
+<a class="nav-item nav-link" href="/interview"><span>Interviews</span></a>
+<a class="nav-item nav-link " href="/natural"><span>Natural Farming</span></a>
+<a class="nav-item nav-link" href="/live"><span>Live Farming</span></a>
+</div>
+</ul>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li> <a href="/feedback">Contact Us</a></li> 
+</ul>
+</div>
+</nav>
+<button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-
+q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-
+Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+<span class="sr-only">Toggle navigation</span>
+{%block body_block%}
+{%endblock%}
+</div>
+</body>
+</html>

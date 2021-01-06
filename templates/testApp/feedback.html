@@ -1,0 +1,28 @@
+
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>FeedBack Form</title>
+</head>
+<style>
+body{
+  background-color:grey;
+}
+</style>
+<body class='agri'>
+<br><br>
+<center>
+<form action='/thank'> 
+<h1>Send Us Your Valuable Feedback</h1>
+<form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>
